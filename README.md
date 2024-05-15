@@ -1,24 +1,37 @@
 # BatchImageRenamer
 
-BatchImageRenamer 是一个简单的脚本工具，用于批量重命名当前目录中的图像文件。它使用Tkinter库获取用户输入的起始编号，并重命名所有符合条件的图像文件（支持.jpg和.png格式）。
+BatchImageRenamer is a simple script tool for batch renaming image files in the current directory. It uses the Tkinter library to get the starting number entered by the user and renames all eligible image files (.jpg and .png formats are supported).
 
-## 功能
+## Function
 
-- 扫描当前目录中的所有 .jpg 和 .png 图片
-- 按用户提供的起始编号批量重命名图片文件
-- 处理文件名排序和格式化
+- Scan all .jpg and .png images in the current directory
+- Batch rename image files with user-supplied starting numbers
+- Handle file name sorting and formatting
 
-## 使用方法
+## How to use
 
-1. 克隆或下载该存储库，并确保你拥有Python环境。
-2. 在所需的目录中放置该脚本（或将脚本移入含有图片的目录）。
-3. 运行脚本：
+1. Clone or download the repository and make sure you have a Python environment.
+2. Place the script in the desired directory (or move the script into the directory containing the images).
+3. Run the script:
     ```bash
     python revise.py
     ```
-4. 一个对话框将会弹出，要求输入起始编号。输入一个整数后，按“确定”。
-5. 脚本会自动将目录中的所有 .jpg 和 .png 文件按顺序重命名，并在终端输出重命名信息。
+4. A dialog box will pop up asking for a starting number. Enter an integer and press OK. 5.
+5. The script will automatically rename all .jpg and .png files in the directory in order and output the rename information in the terminal.
 
-## 示例
+## Example
 
-假设当前目录中有以下图像文件：
+Assume the following image files are in the current directory:
+image1.jpg
+image2.png
+anotherImage.jpg
+
+You set the starting number to 1, then the script will rename them to:
+001.jpg
+002.png
+003.jpg
+
+### Caution
+
+Make sure there are no files in the directory with the same name as the renamed images to prevent overwriting when renaming.
+Running this script will modify the file names in the current directory, so it is recommended to use it in a test environment or backup the files.
