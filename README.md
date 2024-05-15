@@ -35,13 +35,19 @@ If you have the executable file, follow these steps:
 ## Example
 
 Assume you have the following image files in the current directory:
+
 image1.jpg
+
 image2.png
+
 anotherImage.jpg
 
 You set the starting number to 1, then the script will rename them to:
+
 001.jpg
+
 002.png
+
 003.jpg
 
 
