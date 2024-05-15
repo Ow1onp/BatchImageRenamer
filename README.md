@@ -1,2 +1,24 @@
 # BatchImageRenamer
-BatchImageRenamer is a small tool for batch renaming image files. The tool uses the Tkinter GUI library to get user input and Python's os and re modules to batch process image files in the current directory (.jpg and .png formats are supported).
+
+BatchImageRenamer 是一个简单的脚本工具，用于批量重命名当前目录中的图像文件。它使用Tkinter库获取用户输入的起始编号，并重命名所有符合条件的图像文件（支持.jpg和.png格式）。
+
+## 功能
+
+- 扫描当前目录中的所有 .jpg 和 .png 图片
+- 按用户提供的起始编号批量重命名图片文件
+- 处理文件名排序和格式化
+
+## 使用方法
+
+1. 克隆或下载该存储库，并确保你拥有Python环境。
+2. 在所需的目录中放置该脚本（或将脚本移入含有图片的目录）。
+3. 运行脚本：
+    ```bash
+    python revise.py
+    ```
+4. 一个对话框将会弹出，要求输入起始编号。输入一个整数后，按“确定”。
+5. 脚本会自动将目录中的所有 .jpg 和 .png 文件按顺序重命名，并在终端输出重命名信息。
+
+## 示例
+
+假设当前目录中有以下图像文件：
