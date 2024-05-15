@@ -17,13 +17,13 @@ def batch_rename_images():
     images = [img for img in os.listdir('.') if re.match(r'.*\.(jpg|png)', img, re.I)]
     
     if not images:
-        print("目录中没有 .jpg 或 .png 图像。")
+        print("目录中没有 .jpg 或 .png 图像。/ No .jpg or .png images in the catalog.")
         return
     
     start_number = simpledialog.askstring(title="Batch Rename",
-                                         prompt="输入重新命名的起始编号（如 1、2、3）：")
+                                         prompt="输入重新命名的起始编号（如 1、2、3）/ Enter the starting number of the rename (e.g., 1, 2, 3)：")
     if not start_number or not is_integer(start_number):
-        print("起始编号必须是整数。退出程序")
+        print("起始编号必须是整数。退出程序。/ The starting number must be an integer. Exit Program.")
         return
     
     start_number = int(start_number)
@@ -39,7 +39,7 @@ def batch_rename_images():
         os.rename(filename, new_name)
         print(f"Renamed '{filename}' to '{new_name}'")
 
-    print("重新命名已完成。")
+    print("重新命名已完成。/ Renaming has been completed.")
 
 if __name__ == "__main__":
     batch_rename_images()
